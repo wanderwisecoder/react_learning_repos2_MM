@@ -30,6 +30,7 @@ function deriveGameBoard(gameTurns) {
 		const { row, col } = square;
 		gameBoard[row][col] = player;
 	}
+	return gameBoard;
 }
 function deriveWinner(gameBoard, players) {
 	let winner = null;
